@@ -64,4 +64,11 @@ int _abs(int);
  */
 int print_last_digit(int);
 
+/**
+ *jack_bauer - prints every mins from 00:00 to 23:59
+ *
+ *Return: Void
+ */
+void jack_bauer(void);
+
 #endif
