@@ -18,14 +18,14 @@ void times_table(void)
 
 			if (j == 0)
 				_putchar('0');
-			if (times <= 9)
+			if (times > 0 && times <= 9)
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(times + '0');
 			}
-			else
+			else if (times > 9)
 			{
 				_putchar(',');
 				_putchar(' ');
