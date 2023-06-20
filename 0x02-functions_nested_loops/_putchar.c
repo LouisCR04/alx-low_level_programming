@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h> 
 
 /**
  *_putchar - Entry point
@@ -9,9 +9,7 @@
  *
  *Return:A single character
  */
-char _putchar(char c)
+int _putchar(char c)
 {
-	char toprint = putchar(c);
-
-	return (toprint);
+	return (write(1, &c, 1));
 }
