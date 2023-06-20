@@ -47,4 +47,13 @@ int _isalpha(int c);
  */
 int print_sign(int n);
 
+/**
+ *_abs - Computes the absolute value of input integer
+ *and returns 1 if > 0, 0 if == 0 or -1 if <0
+ *@int: An integer value
+ *
+ *Return: Absolute value of input integer
+ */
+int _abs(int);
+
 #endif
