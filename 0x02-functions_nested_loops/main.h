@@ -78,4 +78,13 @@ void jack_bauer(void);
  */
 void times_table(void);
 
+/**
+ *add - Adds two integers
+ *@int: An integer value
+ *
+ *Return: Absolute value of input integer
+ */
+
+int add(int, int);
+
 #endif
