@@ -4,7 +4,7 @@
  *print_to_98 - Prints natural no.s
  *@n: An integer value
  *
- *Return:Always 0(Success)
+ *Return:Void
  */
 
 void print_to_98(int n);
@@ -32,6 +32,5 @@ void print_to_98(int n);
 		}
 		printf("\n");
 	}
-}
 	return (0);
 }
