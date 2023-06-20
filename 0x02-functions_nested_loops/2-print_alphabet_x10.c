@@ -8,21 +8,18 @@
 
 void print_alphabet_x10(void)
 {
-	int i, j;
+	int i;
 	char c;
 
 	for (i = 0; i <= 10; i++)
 	{
+
 		c = 'a';
 		for (c = 'a'; c <= 'z'; c++)
 		{
 			_putchar(c);
 		}
-		j = 0;
-
-		for (j = 0; j < 10; j++)
-		{
-			_putchar('\n');
-		}
+		if (i < 11)
+		_putchar('\n');
 	}
 }
