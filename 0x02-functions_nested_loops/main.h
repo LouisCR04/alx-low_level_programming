@@ -21,4 +21,10 @@ void print_alphabet(void);
  */
 void print_alphabet_x10(void);
 
+/**
+ *_islower - Checks if c is a lower alphabet 
+ *
+ */
+int _islower(int c);
+
 #endif
