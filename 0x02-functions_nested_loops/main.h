@@ -87,4 +87,12 @@ void times_table(void);
 
 int add(int, int);
 
+/**
+ *print_to_98 - Prints natural numbers
+ *@n: An integer value
+ *
+ *Return: Void
+ */
+void print_to_98(int n);
+
 #endif
