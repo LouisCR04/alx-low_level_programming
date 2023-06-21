@@ -15,7 +15,7 @@ int main(void)
 	long double sum = n + m;
 
 	printf("%0.Lf, %0.Lf, ", n, m);
-	for (i = 0; i < 98; i++)
+	for (i = 2; i < 98; i++)
 	{
 		printf("%0.Lf", sum);
 		n = m;
