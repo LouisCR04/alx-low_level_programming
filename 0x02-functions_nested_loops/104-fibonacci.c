@@ -10,14 +10,14 @@ int main(void)
 {
 	int i = 2;
 
-	unsigned long n = 1;
-	unsigned long m = n + 1;
-	unsigned long sum = n + m;
+	long double n = 1;
+	long double m = n + 1;
+	long double sum = n + m;
 
-	printf("%lu, %lu, ", n, m);
+	printf("%0.Lf, %0.Lf, ", n, m);
 	for (i = 0; i < 98; i++)
 	{
-		printf("%lu", sum);
+		printf("%0.Lf", sum);
 		n = m;
 		m = sum;
 		sum = n + m;
