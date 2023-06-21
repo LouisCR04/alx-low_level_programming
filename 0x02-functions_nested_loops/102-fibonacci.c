@@ -21,11 +21,11 @@ int main(void)
 		sum = n + m;
 
 		printf(", %.0f", sum);
-		if ((i%2) == 0)
+		if ((i % 2) == 0)
 		{
 			m = sum;
 		}
-		else if ((i%1) == 0)
+		else if ((i % 1) == 0)
 			n = sum;
 	}
 	printf("\n");
