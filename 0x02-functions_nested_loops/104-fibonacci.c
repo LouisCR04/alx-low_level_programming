@@ -10,20 +10,18 @@ int main(void)
 {
 	int i = 2;
 
-	float n = 1;
-	float m = n + 1;
-	float sum = n + m;
+	long double n = 1;
+	long double m = n + 1;
+	long double sum = n + m;
 
-	printf("%.0f, ", n);
-	printf("%.0f, ", m);
-	while (i < 98)
+	printf("%0.Lf, %0.Lf, ", n, m);
+	for (i = 0; i < 98; i++)
 	{
-		i++;
-		printf("%.0f", sum);
+		printf("%0.Lf", sum);
 		n = m;
 		m = sum;
 		sum = n + m;
-		if (i < 98)
+		if (i < 97)
 		{
 			printf(", ");
 		}
