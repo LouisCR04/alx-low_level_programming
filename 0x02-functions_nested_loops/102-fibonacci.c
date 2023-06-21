@@ -10,23 +10,23 @@
 int main(void)
 {
 	int i;
-	float n, m, sum;
+	unsigned long n, m, sum;
 
 	n = 1;
-	m = 2;
+	m = n + 1;
+	sum = n + m;
 
-	printf("1, 2");
-	for (i = 1; i <= 48; i++)
+	printf("%lu, %lu, ", n, m);
+
+	for (i = 0; i < 48; i++)
 	{
+		printf("%lu", sum);
+		n = m;
+		m = sum;
 		sum = n + m;
 
-		printf(", %.0f", sum);
-		if ((i % 2) == 0)
-		{
-			m = sum;
-		}
-		else if ((i % 1) == 0)
-			n = sum;
+		if (i < 48)
+			printf(", ");
 	}
 	printf("\n");
 	return (0);
