@@ -16,13 +16,14 @@ int main(void)
 
 	printf("%.0f, ", n);
 	printf("%.0f, ", m);
-	for (i = 2; i < 98; i++)
+	while (i < 98)
 	{
+		i++;
 		printf("%.0f", sum);
 		n = m;
 		m = sum;
 		sum = n + m;
-		if (i < 97)
+		if (i < 98)
 		{
 			printf(", ");
 		}
