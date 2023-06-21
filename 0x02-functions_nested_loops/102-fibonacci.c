@@ -25,7 +25,7 @@ int main(void)
 		m = sum;
 		sum = n + m;
 
-		if (i < 48)
+		if (i < 47)
 			printf(", ");
 	}
 	printf("\n");
