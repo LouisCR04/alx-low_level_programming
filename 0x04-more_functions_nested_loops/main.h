@@ -63,4 +63,12 @@ void more_numbers(void);
  */
 void print_line(int n);
 
+/**
+ *print_diagonal - Prints a diagonal line
+ *@n: An integer value
+ *
+ *Return: void
+ */
+void print_diagonal(int n);
+
 #endif
