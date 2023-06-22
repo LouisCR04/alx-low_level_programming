@@ -17,4 +17,12 @@ int _putchar(char c);
  */
 int _isupper(int c);
 
+/**
+ *_isdigit - Checks for numbers 0-9
+ *@c: A single character
+ *
+ *Return: 1 if true else 0
+ */
+int _isdigit(int c);
+
 #endif
