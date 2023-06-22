@@ -55,4 +55,12 @@ void print_most_numbers(void);
  */
 void more_numbers(void);
 
+/**
+ *print_line - Prints a line of length n bytes
+ *@n: An integer value
+ *
+ *Return: void
+ */
+void print_line(int n);
+
 #endif
