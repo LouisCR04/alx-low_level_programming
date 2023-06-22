@@ -39,7 +39,6 @@ int mul(int a, int b);
  *
  *Return: void
  */
-
 void print_numbers(void);
 
 /**
@@ -47,7 +46,13 @@ void print_numbers(void);
  *
  *Return: void
  */
-
 void print_most_numbers(void);
+
+/**
+ *more_numbers - Prints 0 to 14 ten times
+ *
+ *Return: void
+ */
+void more_numbers(void);
 
 #endif
