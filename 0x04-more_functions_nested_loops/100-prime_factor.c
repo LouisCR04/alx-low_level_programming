@@ -8,8 +8,8 @@
 
 int main(void)
 {
-	unsigned long long n = 2;
-	unsigned long long m = 612852475143;
+	unsigned long n = 2;
+	unsigned long m = 612852475143;
 
 	while (n != m)
 	{
@@ -18,6 +18,6 @@ int main(void)
 		else
 			n++;
 	}
-	printf("%llu\n", 
+	printf("%lu\n", m);
 	return (0);
 }
