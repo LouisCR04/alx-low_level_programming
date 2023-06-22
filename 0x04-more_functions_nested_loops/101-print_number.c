@@ -13,7 +13,7 @@ void print_number(int n)
 	unsigned int x = n;
 	unsigned int y = n;
 	int c = 0;
-	
+
 	if (n == 0)
 		_putchar('0');
 	if (n < 0)
