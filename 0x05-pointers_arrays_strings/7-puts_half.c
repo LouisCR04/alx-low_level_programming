@@ -15,9 +15,9 @@ void puts_half(char *str)
 
 	lth = _strlen(a);
 	if (lth % 2 == 0)
-		i = lth/2;
+		i = lth / 2;
 	else
-		i = lth/2 - 1;
+		i = (lth + 1) / 2;
 	while (i < lth)
 	{
 		c = a[i];
