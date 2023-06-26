@@ -66,4 +66,30 @@ void rev_string(char *s);
  */
 void puts2(char *str);
 
+/**
+ *puts_half - Prints the last half of strings
+ *@str: A pointer to a string
+ *
+ *Return: Void
+ */
+void puts_half(char *str);
+
+/**
+ *print_array - Prints elements of an array
+ *@a: A pointer to an integer value
+ *@n: An integer value
+ *
+ *Return: Void
+ */
+void print_array(int *a, int n);
+
+/**
+ *_strcpy - Copies string
+ *@dest: A pointer to a string
+ *@src: A pointer to a string
+ *
+ *Return: Void
+ */
+char *_strcpy(char *dest, char *src);
+
 #endif
