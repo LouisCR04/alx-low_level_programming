@@ -88,7 +88,7 @@ void print_array(int *a, int n);
  *@dest: A pointer to a string
  *@src: A pointer to a string
  *
- *Return: Void
+ *Return: Pointer to dest.
  */
 char *_strcpy(char *dest, char *src);
 
