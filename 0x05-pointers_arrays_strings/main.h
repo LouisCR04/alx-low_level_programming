@@ -42,4 +42,12 @@ int _strlen(char *s);
  */
 void _puts(char *str);
 
+/**
+ *print_rev - Prints the reverse of a string
+ *@s: A pointer to a string
+ *
+ *Return: Void
+ */
+void print_rev(char *s);
+
 #endif
