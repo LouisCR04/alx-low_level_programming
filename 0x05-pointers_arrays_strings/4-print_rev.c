@@ -10,13 +10,19 @@ void print_rev(char *s)
 {
 	char *a = s;
 	char c;
-	int i, j;
+	int i, lth;
+	i = 0;
+	lth = 0;
 	
-	j = _strlen(a);
+        while (a[i] != '\0')
+        {
+                lth++;
+                i++;
+        }
+
+	i = lth;
 	
-	i = j;
-	
-	while (i > 0)
+	while (i > -1)
 	{
 		c = a[i];
 		_putchar(c);
