@@ -92,4 +92,12 @@ void print_array(int *a, int n);
  */
 char *_strcpy(char *dest, char *src);
 
+/**
+ * _atoi - converts string to integer
+ * @s: A pointer to a string
+ *
+ * Return: Integer equivalent of the passed string
+ */
+int _atoi(char *s);
+
 #endif
