@@ -20,7 +20,7 @@ void print_rev(char *s)
                 i++;
         }
 
-	i = lth;
+	i = lth - 1;
 	
 	while (i > -1)
 	{
