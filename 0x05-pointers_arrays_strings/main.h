@@ -43,11 +43,19 @@ int _strlen(char *s);
 void _puts(char *str);
 
 /**
- *print_rev - Prints the reverse of a string
+ *print_rev - Prints the reverse of a string to the std output
  *@s: A pointer to a string
  *
  *Return: Void
  */
 void print_rev(char *s);
+
+/**
+ *rev_string - Reverses a string
+ *@s: A pointer to a string
+ *
+ *Return: Void
+ */
+void rev_string(char *s);
 
 #endif
