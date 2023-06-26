@@ -28,10 +28,18 @@ void swap_int(int *a, int *b);
 
 /**
  *_strlen - Prints length of string
- *@s: A pointer to a character value
+ *@s: A pointer to a string
  *
  *Return: Void
  */
 int _strlen(char *s);
+
+/**
+ *_puts - Prints a string to std output
+ *@str: A pointer to a string
+ *
+ *Return: Void
+ */
+void _puts(char *str);
 
 #endif
