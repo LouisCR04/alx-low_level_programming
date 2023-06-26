@@ -58,4 +58,12 @@ void print_rev(char *s);
  */
 void rev_string(char *s);
 
+/**
+ *puts2 -instr not clear but possibly corresp to even
+ *@str: A pointer to a string
+ *
+ *Return: Void
+ */
+void puts2(char *str);
+
 #endif
