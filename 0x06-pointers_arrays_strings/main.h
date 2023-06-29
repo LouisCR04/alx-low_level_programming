@@ -57,4 +57,20 @@ void reverse_array(int *a, int n);
  */
 char *string_toupper(char *s);
 
+/**
+ *cap_string - changes all lowercase letters of a string to uppercase
+ *@s: A pointer to an integer
+ *
+ *Return: A pointer to a string
+ */
+char *cap_string(char *s);
+
+/**
+ *leet - function that encodes a string into 1337.
+ *@s: A pointer to an integer
+ *
+ *Return: A pointer to a string
+ */
+char *leet(char *s);
+
 #endif
