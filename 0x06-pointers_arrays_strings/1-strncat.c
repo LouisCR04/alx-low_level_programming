@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_strncpy - concatenates two strings after length n
+ *_strncat - concatenates two strings after length n
  *@dest: A pointer to a string
  *@src: A pointer to a string
  *@n: Integer value
@@ -9,7 +9,7 @@
  *Return: Concataned strings starting from nth position of dest
  */
 
-char *_strncpy(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int length, i;
 

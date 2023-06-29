@@ -11,13 +11,42 @@
 char *_strcat(char *dest, char *src);
 
 /**
- *_strncpy - concatenates two strings after length n
+ *_strncat - concatenates two strings after length n
  *@dest: A pointer to a string
  *@src: A pointer to a string
  *@n: Integer value
  *
- *Return: Concataned strings starting from nth position of dest
+ *Return: Concataned strings to nth position of dest
+ */
+char *_strncat(char *dest, char *src, int n);
+
+
+/**
+ *_strncpy - Appends a string to another
+ *@dest: A pointer to a string
+ *@src: A pointer to a string
+ *@n: Integer value
+ *
+ *Return: Copies string to nth byte
  */
 char *_strncpy(char *dest, char *src, int n);
+
+/**
+ *_strcmp - Compares a string to another
+ *@s1: A pointer to a string
+ *@s2: A pointer to a string
+ *
+ *Return: Copies string to nth byte
+ */
+int _strcmp(char *s1, char *s2);
+
+/**
+ *reverse_array - Reverses an array of integers
+ *@a: A pointer to an integer
+ *@n: An integer value
+ *
+ *Return: Void
+ */
+void reverse_array(int *a, int n);
 
 #endif
