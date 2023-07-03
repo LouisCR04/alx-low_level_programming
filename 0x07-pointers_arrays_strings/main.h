@@ -2,6 +2,23 @@
 #define CMMAIN
 
 /**
+ *_putchar - Just outputs a single character to the console
+ *@c: any single character
+ *
+ * Return:A single character
+ */
+int _putchar(char c);
+
+/**
+ *print_chessboard - Prints the current layout of a
+ *chessboard in regards to 2d array location
+ *@a: Pointer to a character
+ *
+ *Return: void
+ */
+void print_chessboard(char (*a)[8]);
+
+/**
  *_strstr - Searches and returns equal strings
  *@haystack: Pointer to a string
  *@needle: pointer to a buffer containing a string
