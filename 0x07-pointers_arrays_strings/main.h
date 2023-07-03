@@ -2,6 +2,16 @@
 #define CMMAIN
 
 /**
+ *_strpbrk - Scans s untill it encounters xters not present in accept
+ *@s: Pointer to a string
+ *@accept: pointer to a buffer containing a string
+ *
+ *Return: Pointer to that matches one of the bytes in accept,
+ *or NULL if no such byte is found
+ */
+char *_strpbrk(char *s, char *accept);
+
+/**
  *_strspn - Scans s untill it encounters xters not present in accept
  *@s: Pointer to a string
  *@accept: pointer to a buffer containing a string
