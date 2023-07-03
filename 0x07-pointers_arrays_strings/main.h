@@ -2,6 +2,16 @@
 #define CMMAIN
 
 /**
+ *_strchr - Checks for 1st occurence of a character in a string
+ *@s: Pointer to a string
+ *@c: Character value
+ *
+ *Return: Pointer to the buffer containing the string if
+ *character is found, else NULL
+ */
+char *_strchr(char *s, char c);
+
+/**
  *_memcopy - Copies contents in a memory buffer to another buffer
  *@dest: Destination buffer
  *@src: Source buffer
