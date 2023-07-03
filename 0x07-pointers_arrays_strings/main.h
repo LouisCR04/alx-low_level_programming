@@ -2,6 +2,16 @@
 #define CMMAIN
 
 /**
+ *_strspn - Scans s untill it encounters xters not present in accept
+ *@s: Pointer to a string
+ *@accept: pointer to a buffer containing a string
+ *
+ *Return: number of bytes in the initial segment of s which
+ *consist only of bytes from accept
+ */
+unsigned int _strspn(char *s, char *accept);
+
+/**
  *_strchr - Checks for 1st occurence of a character in a string
  *@s: Pointer to a string
  *@c: Character value
