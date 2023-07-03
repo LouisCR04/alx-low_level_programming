@@ -2,6 +2,16 @@
 #define CMMAIN
 
 /**
+ *_strstr - Searches and returns equal strings
+ *@haystack: Pointer to a string
+ *@needle: pointer to a buffer containing a string
+ *
+ *Return: Pointer to that matches strings in needle,
+ *or NULL if no such substring is found
+ */
+char *_strstr(char *haystack, char *needle);
+
+/**
  *_strpbrk - Scans s untill it encounters xters not present in accept
  *@s: Pointer to a string
  *@accept: pointer to a buffer containing a string
