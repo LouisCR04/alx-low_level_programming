@@ -2,6 +2,15 @@
 #define CMMAIN
 
 /**
+ *set_string - sets a pointer to point to a pointer
+ *@s: A pointer to set
+ *@to: pointer to a string or characters
+ *
+ * Return: void
+ */
+void set_string(char **s, char *to);
+
+/**
  *print_diagsums - Prints the sums of diagonals in square matrix
  *@a: A pointer to array
  *@size: size of columns actually
