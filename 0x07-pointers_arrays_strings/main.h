@@ -2,6 +2,15 @@
 #define CMMAIN
 
 /**
+ *print_diagsums - Prints the sums of diagonals in square matrix
+ *@a: A pointer to array
+ *@size: size of columns actually
+ *
+ * Return: void
+ */
+void print_diagsums(int *a, int size);
+
+/**
  *_putchar - Just outputs a single character to the console
  *@c: any single character
  *
