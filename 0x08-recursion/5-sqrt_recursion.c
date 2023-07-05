@@ -11,7 +11,7 @@ int fnsqrt(int n, int root)
 {
 	if (root == n / 2)
 		return (-1);
-	else if ((root *root) == n)
+	else if ((root * root) == n)
 		return (root);
 	else
 		return (fnsqrt(n, root + 1));
