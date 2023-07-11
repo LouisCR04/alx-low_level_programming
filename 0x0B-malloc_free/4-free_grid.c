@@ -2,10 +2,11 @@
 #include <stdlib.h>
 
 /**
+ *free_grid - Frees Mem for previous Task
+ *@grid: the previous grid
+ *@height: size of column
  *
- *@:
- *
- * Return:
+ * Return: Pointer to grid
  */
 
 void free_grid(int **grid, int height)
