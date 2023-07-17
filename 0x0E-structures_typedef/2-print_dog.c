@@ -3,8 +3,7 @@
 #include <stdio.h>
 
 /**
- *print_dog - Prints the members of struct dog
- *@dog: A struct
+ *print_dog - Prints the members of struct Dog
  *@d: Pointer to structure
  *
  * Return: void
