@@ -18,7 +18,7 @@ void print_dog(struct dog *d)
 		char **owneR = &(d->owner);
 		char *str = "(nil)";
 
-		if (d->owner == NULL)
+		if (owneR == NULL)
 			*owneR = str;
 		if (*namE == NULL)
 			*namE = str;
