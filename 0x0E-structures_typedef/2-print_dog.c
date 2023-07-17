@@ -13,18 +13,18 @@ void print_dog(struct dog *d)
 {
 	if (d != NULL)
 	{
-		char **namE = &(d->name);
-		float agE = d->age;
-		char **owneR = &(d->owner);
+		char **_name = &(d->name);
+		float _age = d->age;
+		char **_owner = &(d->owner);
 		char *str = "(nil)";
 
-		if (owneR == NULL)
-			*owneR = str;
-		if (*namE == NULL)
-			*namE = str;
-		if (agE < 0)
-			printf("Name:%s\nAge:%s\nOwner:%s\n", *namE, "(nil)", *owneR);
+		if (_owner == NULL)
+			*_owner = str;
+		if (_name == NULL)
+			*_name = str;
+		if (_age <= 0)
+			printf("Name:%s\nAge:%s\nOwner:%s\n", *_name, "(nil)", *_owner);
 		else
-			printf("Name:%s\nAge:%.6f\nOwner:%s\n", *namE, agE, *owneR);
+			printf("Name:%s\nAge:%.6f\nOwner:%s\n", *_name, _age, *_owner);
 	}
 }
