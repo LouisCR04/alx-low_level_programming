@@ -16,11 +16,12 @@ void print_dog(struct dog *d)
 		char **_name = &(d->name);
 		float _age = d->age;
 		char **_owner = &(d->owner);
+		char *str = "(nil)";
 
 		if (_owner == NULL)
-			*_owner = "(nil)";
+			*_owner = str;
 		if (_name == NULL)
-			*_name = "(nil)";
-		printf("Name:%s\nAge:%f\nOwner:%s\n", *_name, _age, *_owner);
+			*_name = str;
+		printf("Name: %s \nAge: %f\nOwner: %s\n", *_name, _age, *_owner);
 	}
 }
