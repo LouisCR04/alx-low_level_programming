@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <udis86.h>
 
 /**
  *main - entry
@@ -12,7 +11,7 @@
 
 int main(int argc, char **argv)
 {
-	ud_t ud_obj;
+	int i;
 
 	if (argc != 2)
 	{
@@ -26,13 +25,13 @@ int main(int argc, char **argv)
 		exit(2);
 	}
 
-	ud_init(&ud_obj);
-	ud_set_input_buffer(&ud_obj, argv[1], atoi(argv[1]));
-	ud_set_mode(&ud_obj, 64);
-	ud_set_syntax(&ud_obj, UD_SYN_INTEL);
-
-	while (ud_disassemble(&ud_obj))
-		printf("%02x ", atoi(ud_insn_ptr(&ud_obj)));
-	printf("\n");
+	for (i = 0; i < atoi(argv[1]); i++)
+	{
+		printf("%02hhx", *((char *)main + i));
+		if (i < atoi(argv[1]) - 1)
+			printf(" ");
+		else
+			printf("\n");
+	}
 	return (0);
 }
