@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 
 	if (!operation) /*if null, ie, not the defined operators*/
 	{
-		printf("Error\n")
+		printf("Error\n");
 		exit(99);
 	}
 
