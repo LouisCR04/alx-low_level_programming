@@ -26,10 +26,10 @@ int main(int argc, char **argv)
 		exit(2);
 	}
 
-	ud_init(&ud_obj);
+	ud_unit(&ud_obj);
 	ud_set_input_buffer(&ud_obj, argv[1], atoi(argv[1]));
 	ud_set_mode(&ud_obj, 64);
-	ud_setsyntax(&ud_obj, UD_SYN_INTEL);
+	ud_set_syntax(&ud_obj, UD_SYN_INTEL);
 
 	while (ud_disassemble(&ud_obj))
 		printf("\t%s\n", ud_insn_hex(&ud_obj));
