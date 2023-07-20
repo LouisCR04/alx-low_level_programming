@@ -2,7 +2,7 @@
 
 /**
  *sum_them_all - Adds all passed args in the variadic fx
- *@n: No of int args? 
+ *@n: No of int args?
  *
  * Return: Sum
  */
@@ -21,7 +21,6 @@ int sum_them_all(const unsigned int n, ...)
 		{
 			sum += va_arg(args, int);
 		}
-		
 		va_end(args);
 		return (sum);
 	}
