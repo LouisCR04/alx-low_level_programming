@@ -20,4 +20,10 @@ void print_strings(const char *separator, const unsigned int n, ...);
 
 void print_all(const char * const format, ...);
 
+typedef struct form_spec
+{
+	char *specifier;
+	void (*f)(char *separator, va_list args);
+}f_spec;
+
 #endif /*_VARFX_*/
