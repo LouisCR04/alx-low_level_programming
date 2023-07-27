@@ -1,8 +1,8 @@
-global _start
+global main
 
 section .text
 
-_start:
+main:
 	mov rax, 1	;Sys call is put in rax-write(
 
 ;arguments are put in registers rdi, rsi, rdx, rcx & r9 in that order
