@@ -9,6 +9,17 @@
  */
 void *malloc_checked(unsigned int b);
 
+/**
+ *_putchar - Entry point
+ *This is the 1st source file that the gcc
+ *is compiling and will be linked to the 0-putchar.c file
+ *Just outputs a single character to the console
+ *@c: any single character
+ *
+ * Return:A single character
+ */
+int _putchar(char c);
+
 char *string_nconcat(char *s1, char *s2, unsigned int n);
 
 void *_calloc(unsigned int nmemb, unsigned int size);
