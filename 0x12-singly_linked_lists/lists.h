@@ -9,7 +9,7 @@
  *
  * Return:1 if successful
  */
-int _putchar(char c)
+int _putchar(char c);
 
 /**
  *struct list_s - Singly linked list
