@@ -9,7 +9,7 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	unsigned long nodes = 0;
+	size_t node = 0;
 
 	if (h == NULL)
 		return (0);
@@ -17,7 +17,7 @@ size_t print_listint(const listint_t *h)
 	{
 		printf("%d\n", h->n);
 		h = h->next;
-		nodes++;
+		node++;
 	}
-	return (nodes);
+	return (node);
 }
