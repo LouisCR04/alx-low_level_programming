@@ -11,7 +11,7 @@ void free_listint2(listint_t **head)
 {
 	listint_t *traverser;
 
-	if (*head == NULL)
+	if (head == NULL)
 		return;
 
 	while (*head != NULL)
@@ -20,6 +20,5 @@ void free_listint2(listint_t **head)
 		*head = (*head)->next;
 		free(traverser);
 	}
-	free(*head);
-	free(*head);
+	head = NULL;
 }
