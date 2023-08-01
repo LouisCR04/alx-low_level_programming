@@ -14,7 +14,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	listint_t *ins_node, *traverser;
 	unsigned int i;
 
-	if (*head == NULL)
+	if(head == NULL)
 		return (NULL);
 
 	ins_node = malloc(sizeof(listint_t));
@@ -23,7 +23,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	ins_node->n = n;
 
-	if (n == 0)
+	if (idx == 0)
 	{
 		ins_node->next = *head;
 		*head = ins_node;
@@ -37,7 +37,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		traverser = traverser->next;
 
 		if (traverser == NULL)
+		{
+			free(ins_node);
 			return (NULL);
+		}
 	}
 
 	ins_node->next = traverser->next;
