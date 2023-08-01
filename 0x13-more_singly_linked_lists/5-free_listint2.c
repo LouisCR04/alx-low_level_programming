@@ -21,5 +21,5 @@ void free_listint2(listint_t **head)
 		free(traverser);
 	}
 	free(*head);
-	head = NULL;
+	free(*head);
 }
