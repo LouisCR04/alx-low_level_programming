@@ -13,14 +13,14 @@ size_t print_listint_safe(const listint_t *head)
 	size_t node = 0;
 
 	if (head == NULL)
-		exit(98);
+		return (0);
 
 	tortoise = head;
-	hare = head;
+	hare = head->next;
 
 	while (hare != NULL && hare->next != NULL)
 	{
-		printf("[%p] %d\n", (void*)tortoise, tortoise->n);
+		printf("[%p] %d\n", (void *)tortoise, tortoise->n);
 		node++;
 
 		hare = hare->next->next;
@@ -28,7 +28,7 @@ size_t print_listint_safe(const listint_t *head)
 
 		if (tortoise == hare)
 		{
-			printf("[%p] %d\n", (void*)tortoise, tortoise->n);
+			printf("[%p] %d\n", (void *)tortoise, tortoise->n);
 					return (node);
 		}
 	}
