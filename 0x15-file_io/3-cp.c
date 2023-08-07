@@ -66,7 +66,7 @@ int main(int argc, char **argv)
 void cpy_file(char *src, char *dest)
 {
 	int fd_src, fd_dest;
-	int n_src, n_dest;
+	ssize_t n_src, n_dest;
 	char *buf;
 
 	fd_src = open(src, O_RDONLY);
@@ -80,14 +80,6 @@ void cpy_file(char *src, char *dest)
 		_writerr(dest);
 	}
 
-	n_src = read(fd_src, buf, 1024);
-	if (n_src < 0)
-	{
-		free(buf);
-		_closeFL(fd_src);
-		_readerr(src);
-	}
-
 	fd_dest = open(dest, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd_dest < 0)
 	{
@@ -96,14 +88,23 @@ void cpy_file(char *src, char *dest)
 		_writerr(dest);
 	}
 
-	n_dest = write(fd_dest, buf, n_src);
+	while ((n_src = read(fd_src, buf, 1024)) > 0)
+	{
+		n_dest = write(fd_dest, buf, n_src);
 
-	if (n_dest < 0)
+		if (n_dest < 0)
+		{
+			free(buf);
+			_closeFL(fd_src);
+			_closeFL(fd_dest);
+			_writerr(dest);
+		}
+	}
+	if (n_src < 0)
 	{
 		free(buf);
 		_closeFL(fd_src);
-		_closeFL(fd_dest);
-		_writerr(dest);
+		_readerr(src);
 	}
 }
 
