@@ -13,7 +13,7 @@
 void cpy_file(char *src, char *dest);
 
 /**
- *closeFL- Closesa file
+ *_closeFL- Closesa file
  *@fd: File descriptor
  *
  * Return: void
@@ -56,6 +56,13 @@ int main(int argc, char **argv)
 	return (0);
 }
 
+/**
+ *cpy_file - Copies contents of one file to another
+ *@src: Name of file to copy from
+ *@dest: Name of file to copy to
+ *
+ * Return: void
+ */
 void cpy_file(char *src, char *dest)
 {
 	int fd_src, fd_dest;
@@ -100,18 +107,36 @@ void cpy_file(char *src, char *dest)
 	}
 }
 
+/**
+ *_readerr - Outputs error if read fails
+ *@filename: Name of file being referred to
+ *
+ * Return: void
+ */
 void _readerr(char *filename)
 {
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
-	exit (98);
+	exit(98);
 }
 
+/**
+ *_writerr - Outputs error if write fails
+ *@filename: Name of file being referred to
+ *
+ * Return: void
+ */
 void _writerr(char *filename)
 {
 	dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", filename);
-	exit (99);
+	exit(99);
 }
 
+/**
+ *_closeFL- Closesa file
+ *@fd: File descriptor
+ *
+ * Return: void
+ */
 void _closeFL(int fd)
 {
 	int n;
@@ -120,6 +145,6 @@ void _closeFL(int fd)
 	if (n < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close %d\n", fd);
-		exit (100);
+		exit(100);
 	}
 }
