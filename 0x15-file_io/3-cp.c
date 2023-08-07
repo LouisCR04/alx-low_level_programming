@@ -106,6 +106,10 @@ void cpy_file(char *src, char *dest)
 		_closeFL(fd_src);
 		_readerr(src);
 	}
+
+	free(buf);
+	_closeFL(fd_src);
+	_closeFL(fd_dest);
 }
 
 /**
