@@ -1,10 +1,11 @@
 #include "lists.h"
 
 /**
+ *main - Entry point
+ *@argc: Argument count
+ *@argv: Terminal arguments
  *
- *@:
- *
- * Return:
+ * Return: Always 0
  */
 int main(int __attribute__((__unused__)) argc, char **argv)
 {
