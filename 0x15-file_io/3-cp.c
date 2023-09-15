@@ -120,7 +120,7 @@ void cpy_file(char *src, char *dest)
  */
 void _readerr(char *filename)
 {
-	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
+	dprintf(STDERR_FILENO, "Error: Can't read from %s\n", filename);
 	exit(98);
 }
 
@@ -132,7 +132,7 @@ void _readerr(char *filename)
  */
 void _writerr(char *filename)
 {
-	dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", filename);
+	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
 	exit(99);
 }
 
