@@ -3,6 +3,7 @@
 /**
  *add_dnodeint_end - adds a new node at the end of a doubly linked list
  *@head: Pointer to the linked list
+ *@n: Data value
  *
  * Return: address of the new element, or NULL if it failed
  */
