@@ -1,14 +1,16 @@
 #include "search_algos.h"
 
 /**
+ *binary_search - Searches for a value in a sorted array using binary S.ALG.
+ *@array: Pointer to 1st element of the array to search in.
+ *@size: Number of elements in the array
+ *@value: Value to search for in the array
  *
- *@:
- *
- * Return:
+ * Return: Index where value is located else -1
  */
-
+int binary_search(int *array, size_t size, int value)
 {
-		size_t i, left, right;
+	size_t i, left, right;
 
 	if (array == NULL)
 		return (-1);
@@ -30,5 +32,4 @@
 	}
 
 	return (-1);
-	return (0);
 }
